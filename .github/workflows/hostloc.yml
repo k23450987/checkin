@@ -24,7 +24,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run hostloc checkin
       env:
-        hostloc_username_1: ${{ secrets.hostloc_username_1 }}
-        hostloc_password_1: ${{ secrets.hostloc_password_1 }}
+        hostloc_username_1: ${{ secrets.SECRETS_HOSTLOC_USERNAME }}
+        hostloc_password_1: ${{ secrets.SECRETS_HOSTLOC_PASSWORD }}
       run: |
         python run.py
