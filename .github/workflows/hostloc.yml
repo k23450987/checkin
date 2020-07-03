@@ -28,3 +28,4 @@ jobs:
         hostloc_password_1: ${{ secrets.SECRETS_HOSTLOC_PASSWORD }}
       run: |
         python run.py
+
