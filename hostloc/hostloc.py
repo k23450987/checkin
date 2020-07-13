@@ -163,7 +163,7 @@ def hostloc_checkin(account, strage='local'):
             continue
         space_text = s.get('https://www.hostloc.com/space-uid-%s.html' % space_uid, proxies=proxies, cookies=cookies).text
         visited_space_uids.append(space_uid)
-        time.sleep(randint(5, 8))
+        time.sleep(randint(5, 15))
         if '抱歉，您指定的用户空间不存在' in space_text:
             logger.debug('访问UID: %s，不存在', space_uid)
             continue
